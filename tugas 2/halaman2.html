@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kedua</title>
+    <link rel="stylesheet" href="hal2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="input-container">
+        <h1 class="oswald-<uniquifier>">Masukkan Nama dan NIM</h1>
+        <button class="start-button" onclick="getData()">Mulai Input</button>
+
+        <br> 
+    </div>
+
+    <div class="result-container" id="resultContainer">
+        <h2>Data yang Dimasukkan:</h2>
+        <p id="namaDisplay">Nama: </p>
+        <p id="nimDisplay">NIM: </p>
+
+        <button class="navigate-button" onclick="location.href='halaman2.html'">kembali</button>
+    </div>
+
+    <script>
+        function getData() {
+            var nama = prompt("Masukkan Nama Anda:");
+            var nim = prompt("Masukkan NIM Anda:");
+
+            if (nama && nim) {
+                document.getElementById("namaDisplay").textContent = "Nama: " + nama;
+                document.getElementById("nimDisplay").textContent = "NIM: " + nim;
+                document.getElementById("resultContainer").style.display = "block";
+            } else {
+                alert("Harap masukkan nama dan NIM dengan benar.");
+            }
+        }
+    </script>
+</body>
+</html>

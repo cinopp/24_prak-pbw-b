@@ -1,0 +1,66 @@
+body {
+    font-family:"Fascinate Inline", system-ui;
+    color: rgba(128, 255, 0, 0.861);
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#namaDisplay{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#nimDisplay{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.result-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+    display: none;
+}
+
+.result-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.input-container {
+    text-align: center;
+}
+
+.start-button {
+    padding: 10px 20px;
+    background-color: #4cacaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
